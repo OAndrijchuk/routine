@@ -1,0 +1,7 @@
+.filter{
+    grid-area: Filter;
+    background-color: rgb(207, 213, 255);
+    text-align: center;
+    position: relative;
+    font-size: 22px;;
+}

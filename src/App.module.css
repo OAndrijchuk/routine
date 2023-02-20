@@ -1,0 +1,12 @@
+.conteiner{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 
+    "Header Header Header"
+    "Filter Routine Routine"
+    "Footer Footer Footer";
+
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-columns: 4fr 9fr;
+    gap: 5px;
+}

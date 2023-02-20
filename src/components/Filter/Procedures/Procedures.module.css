@@ -1,0 +1,5 @@
+.procedures{
+   grid-area: procedures;
+   text-align: left;
+   max-height: 70vh;
+}
