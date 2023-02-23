@@ -4,10 +4,11 @@ import styles from './Masters.module.css';
 
 
 const Masters = (props) =>{
-let mastersPerson = props.mastersPerson;
+
+let masters = props.masters;
 
 
-let mastersElements = mastersPerson.map(person => <Master name={person.name} id={person.id}/>)
+let mastersElements = masters.map(person => <Master name={person.name} id={person.id}/>)
     return( <details open className={styles.masters}>
                 <summary>Виберіть вашого майстра:</summary>
                 <fieldset>

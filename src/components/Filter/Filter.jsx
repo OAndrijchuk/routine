@@ -1,17 +1,17 @@
 import React from "react";
 import Rezult from "./Rezult/Rezult";
 import styles from './Filter.module.css';
-import Calendar from "./Calendar/Calendar";
-import Masters from "./Masters/Masters";
 import Procedures from "./Procedures/Procedures";
+import CalendarContainer from "./Calendar/CalendarContainer";
+import MastersContainer from "./Masters/MastersContainer";
 
 
 const Filter = (props) =>{
 
     return( <div className={styles.filter}>
                 <form className={styles.conteiner}>
-                    <Calendar dispatch={props.dispatch} dataText={props.dataText}/>
-                    <Masters mastersPerson ={props.mastersPerson}/>
+                    <CalendarContainer/>
+                    <MastersContainer/>
                     <Procedures/>
                     <Rezult/>
                 </form>

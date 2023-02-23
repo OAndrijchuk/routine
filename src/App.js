@@ -10,7 +10,7 @@ function App(props) {
   return (
     <div className={styles.conteiner}>
       <Header/>
-      <Filter dispatch={props.dispatch} mastersPerson ={props.mastersPerson} dataText={props.dataText}/>
+      <Filter store = {props.store}/>
       <Routine/>
       <Footer/>
     </div>

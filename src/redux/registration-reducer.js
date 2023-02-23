@@ -15,8 +15,9 @@ let initialState = {
 const registrationReducer = (state = initialState, action) =>{
     switch(action.type){
         case SET_DATA:
-            state.data = action.newData;
-            return state;
+            let stateCopy = {...state}
+            stateCopy.data = action.newData;
+            return stateCopy;
         default:
             return state;
     }

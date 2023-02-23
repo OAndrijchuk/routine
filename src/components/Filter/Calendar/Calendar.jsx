@@ -1,5 +1,4 @@
 import React from "react";
-import { setDataActionCreater } from "../../../redux/registration-reducer";
 import styles from './Calendar.module.css';
 
 
@@ -9,7 +8,7 @@ const Calendar = (props) =>{
 
     let setData = () =>{
         let dataValue = choiceData.current.value;
-        props.dispatch(setDataActionCreater(dataValue));
+        props.setDataActionCreater(dataValue);
     }
 
     return( <div className={styles.calendar}>
